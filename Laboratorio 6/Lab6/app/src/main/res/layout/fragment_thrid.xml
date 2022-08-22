@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThridFragment"
+    android:background="@color/Background3Fragments">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="@dimen/SizeLibreiaX"
+        android:layout_height="@dimen/SizeLibreiaY"
+        android:layout_marginHorizontal="@dimen/MargenesEstandarX"
+        android:layout_marginVertical="@dimen/MargenesEstadarY"
+        android:layout_marginTop="@dimen/MargenesEstadarY"
+        android:text="@string/Libreria"
+        android:textColor="@color/white"
+        android:textSize="@dimen/TextosMedianos1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/cuadradosMed"
+        android:layout_height="@dimen/cuadradosMed"
+        android:src="@drawable/personpin"
+        android:layout_marginHorizontal="@dimen/MargenesEstandarX"
+        android:layout_marginVertical="@dimen/MargenesEstadarY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/busquedaButton"
+        android:layout_width="@dimen/cuadradosPeque"
+        android:layout_height="@dimen/cuadradosPeque"
+        android:background="@color/sinColor"
+        android:scaleType="fitXY"
+        android:src="@drawable/lupa"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/addButton"
+        android:layout_width="@dimen/cuadradosPeque"
+        android:layout_height="@dimen/cuadradosPeque"
+        android:background="@color/sinColor"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="@+id/busquedaButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/busquedaButton"
+        app:layout_constraintTop_toTopOf="@+id/busquedaButton" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/paraFuturoMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+            android:id="@+id/MasRecientes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/MargenesEstandarX"
+            android:text="@string/recientes"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/cuadradosPeque"
+            android:layout_height="@dimen/cuadradosPeque"
+            android:layout_marginHorizontal="@dimen/MargenesEstandarX"
+            android:layout_marginVertical="@dimen/MargenesEstadarY"
+            android:rotation="90"
+            android:scaleType="fitXY"
+            android:src="@drawable/flechitas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/seccionFuturoMenu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+            <ImageView
+                android:id="@+id/imagenCorazon"
+                android:layout_width="@dimen/cuadradosGrand"
+                android:layout_height="@dimen/cuadradosGrand"
+                android:layout_marginHorizontal="@dimen/MargenesEstandarX"
+                android:background="@color/sinColor"
+                android:src="@drawable/coranzon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/cancionesLiked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Likes"
+                android:textColor="@color/white"
+                android:layout_marginVertical="@dimen/MargenesEstadarY"
+                android:layout_marginHorizontal="@dimen/MargenesEstandarX"
+                app:layout_constraintStart_toEndOf="@+id/imagenCorazon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/addTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/inicioCont"
+                android:layout_marginHorizontal="@dimen/MargenesEstandarX"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/imagenCorazon"
+                app:layout_constraintTop_toBottomOf="@+id/cancionesLiked" />
+
+            <TextView
+                android:id="@+id/textoPostAdding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/songs"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/addTextView"
+                app:layout_constraintStart_toEndOf="@+id/addTextView"
+                app:layout_constraintTop_toBottomOf="@+id/cancionesLiked" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

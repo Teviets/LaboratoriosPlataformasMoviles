@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="AltoFragmentMenu">65dp</dimen>
+    <dimen name="TextosGrandes">60dp</dimen>
+    <dimen name="TextosGrandes1">55dp</dimen>
+    <dimen name="TextosMedianosMayor">45</dimen>
+    <dimen name="TextosMedianos">35dp</dimen>
+    <dimen name="TextosMedianos1">25dp</dimen>
+    <dimen name="MargenesEstadarY">25dp</dimen>
+    <dimen name="MargenesEstandarX">15dp</dimen>
+    <dimen name="CornerRadius">35dp</dimen>
+    <dimen name="GenerosX">204dp</dimen>
+    <dimen name="GenerosY">110dp</dimen>
+
+    <dimen name="cuadradosGrand">90dp</dimen>
+    <dimen name="cuadradosMed">60dp</dimen>
+    <dimen name="cuadradosPeque">30dp</dimen>
+
+    <dimen name="paraFuturoMenu">645dp</dimen>
+    <dimen name="seccionFuturoMenu">100dp</dimen>
+
+    <dimen name="SizeLibreiaX">155dp</dimen>
+    <dimen name="SizeLibreiaY">29dp</dimen>
+    <dimen name="sizeGoodMorx">224dp</dimen>
+    <dimen name="sizeGoodMorY">51dp</dimen>
+    <dimen name="marginBottom">324dp</dimen>
+
+</resources>

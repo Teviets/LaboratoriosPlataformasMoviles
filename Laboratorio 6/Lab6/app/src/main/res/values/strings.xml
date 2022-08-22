@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Lab6</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Saludo">Good morning</string>
+    <string name="Nombre_del_autor">Sebastian Estrada</string>
+    <string name="Busqueda">Search</string>
+    <string name="Generos">Your top Genres</string>
+    <string name="Libreria">Your Library</string>
+    <string name="recientes">Most Recent</string>
+    <string name="Likes">Liked Songs</string>
+    <string name="songs">Songs</string>
+
+    <string name="genero1">Rock</string>
+    <string name="genero2">Reggaeton</string>
+    <string name="genero3">Rap</string>
+    <string name="genero4">Pop</string>
+
+    <string name="inicioCont">0 </string>
+
+    <string name="home">Home</string>
+    <string name="Search">Search</string>
+    <string name="Your_Library">Your Library</string>
+</resources>
