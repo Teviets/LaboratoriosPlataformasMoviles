@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="anchoTextoCliqueabble">30dp</dimen>
+    <dimen name="altoMargin">10dp</dimen>
+    <dimen name="altoButton">50dp</dimen>
+    <dimen name="altoTextField">55dp</dimen>
+    <dimen name="altoTextInput">55dp</dimen>
+
+    <dimen name="textoGrande">25dp</dimen>
+    <dimen name="fotoPerfil">100dp</dimen>
+    <dimen name="margenEspacioso">30dp</dimen>
+    <dimen name="imgCard">50dp</dimen>
+</resources>

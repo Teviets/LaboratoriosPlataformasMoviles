@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Laboratorio7</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Laboratorio">Laboratorio 7</string>
+    <string name="IngresoCor">Ingrese su Correo</string>
+    <string name="NUserCliqueable">¿Nuevo usuario? ¡Crea tu usuario aquí!</string>
+    <string name="IniciarSesion">Iniciar Sesion</string>
+    <string name="NewUser">Nueva cuenta</string>
+    <string name="buenos_dias">¡Buenos dias!</string>
+    <string name="actualizar_perfil">Actualizar Perfil</string>
+    <string name="mi_perfil">Mi perfil</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="fargmentLoginlbl">fragment_login</string>
+    <string name="fragmentPrfllbl">fragment_perfil</string>
+    <string name="fragmentSuplbl">fragment_sing_up</string>
+    <string name="fragmentupdtlbl">fragment_update</string>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LoginFragment"
+    android:id="@+id/FragmentLogin">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tituloLab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Laboratorio"
+            android:textSize="@dimen/textoGrande"
+            app:layout_constraintBottom_toTopOf="@+id/EmailTextField"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EmailTextField"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/altoTextInput"
+            android:layout_marginHorizontal="@dimen/anchoTextoCliqueabble"
+            android:layout_marginVertical="@dimen/altoMargin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/EmailTextEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/IngresoCor"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/TextoCliqueableRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="@dimen/anchoTextoCliqueabble"
+            android:autoSizeTextType="uniform"
+            android:clickable="true"
+            android:layout_marginVertical="@dimen/altoMargin"
+            android:text="@string/NUserCliqueable"
+            android:textColor="@android:color/holo_blue_light"
+            app:layout_constraintStart_toStartOf="@+id/EmailTextField"
+            app:layout_constraintTop_toBottomOf="@+id/EmailTextField"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/inicioSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/IniciarSesion"
+            android:background="@color/principal"
+
+            android:layout_marginHorizontal="@dimen/anchoTextoCliqueabble"
+            android:layout_marginVertical="@dimen/altoMargin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextoCliqueableRegister"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
