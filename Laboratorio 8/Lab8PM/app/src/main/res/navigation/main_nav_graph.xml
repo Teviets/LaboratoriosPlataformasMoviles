@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/optionCharacterFragment">
+
+    <fragment
+        android:id="@+id/optionCharacterFragment"
+        android:name="com.sebastian.lab8pm.OptionCharacterFragment"
+        android:label="Characters"
+        tools:layout="@layout/fragment_option_character" >
+        <action
+            android:id="@+id/action_optionCharacterFragment_to_characterProfileFragment"
+            app:destination="@id/characterProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterProfileFragment"
+        android:name="com.sebastian.lab8pm.CharacterProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_character_profile" >
+        <action
+            android:id="@+id/action_characterProfileFragment_to_optionCharacterFragment"
+            app:destination="@id/optionCharacterFragment" />
+        <argument
+            android:name="Place"
+            app:argType="com.sebastian.lab8pm.entities.Place" />
+
+    </fragment>
+</navigation>

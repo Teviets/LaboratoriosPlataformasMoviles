@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ProfileFragment"
+    tools:context=".CharacterProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ImageProfile"
+            android:layout_width="@dimen/imagenPerfil"
+            android:layout_height="@dimen/imagenPerfil"
+            android:layout_marginTop="@dimen/Margin_UltraLarge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/NameProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Margin_UltraLarge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ImageProfile"
+            tools:text="@string/Prueba_txt" />
+
+        <TextView
+            android:id="@+id/Specie"
+            android:layout_width="@dimen/dimentext"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Margin_UltraLarge"
+            android:layout_marginTop="@dimen/Margin_UltraLarge"
+            android:text="@string/specie"
+            app:layout_constraintEnd_toStartOf="@+id/SpecieInput"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NameProfile" />
+
+        <TextView
+            android:id="@+id/SpecieInput"
+            android:layout_width="@dimen/dimentext"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Margin_UltraLarge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/NameProfile"
+            app:layout_constraintTop_toBottomOf="@+id/NameProfile"
+            tools:text="@string/HumanoPrueba" />
+
+        <TextView
+            android:id="@+id/StatusInput"
+            android:layout_width="@dimen/dimentext"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Margin_UltraLarge"
+            tools:text="@string/PruebaAlive"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Status"
+            app:layout_constraintTop_toBottomOf="@+id/SpecieInput" />
+
+        <TextView
+            android:id="@+id/Status"
+            android:layout_width="@dimen/dimentext"
+            android:layout_height="wrap_content"
+            android:text="@string/status"
+            android:layout_marginTop="@dimen/Margin_UltraLarge"
+            android:layout_marginStart="@dimen/Margin_UltraLarge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Specie" />
+
+        <TextView
+            android:id="@+id/Gender"
+            android:layout_width="@dimen/dimentext"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:layout_marginTop="@dimen/Margin_UltraLarge"
+            android:layout_marginStart="@dimen/Margin_UltraLarge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Status" />
+
+        <TextView
+            android:id="@+id/GenderInput"
+            android:layout_width="@dimen/dimentext"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Margin_UltraLarge"
+            tools:text="@string/PruebaMasc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Gender"
+            app:layout_constraintTop_toBottomOf="@+id/StatusInput" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

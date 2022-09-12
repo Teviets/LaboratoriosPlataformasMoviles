@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/heigth_standar_Itemplace"
+    android:id="@+id/layout_itemPlace">
+
+    <ImageView
+        android:id="@+id/item_listPlace"
+        android:layout_width="@dimen/default_image_list"
+        android:layout_height="@dimen/default_image_list"
+        android:layout_marginStart="@dimen/medium_Margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_itemPlace"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/Margin_UltraLarge"
+        android:layout_marginEnd="@dimen/Margin_Large"
+        app:layout_constraintBottom_toBottomOf="@+id/secondaryText_itemPlace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_listPlace"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="hola" />
+
+    <TextView
+        android:id="@+id/secondaryText_itemPlace"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/Margin_UltraLarge"
+        android:layout_marginEnd="@dimen/Margin_Large"
+        android:layout_marginBottom="@dimen/Medium_Margin"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_listPlace" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

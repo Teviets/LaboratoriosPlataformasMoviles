@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_image_list">40dp</dimen>
+    <dimen name="heigth_standar_Itemplace">72dp</dimen>
+    <dimen name="medium_Margin">8dp</dimen>
+    <dimen name="Margin_UltraLarge">32dp</dimen>
+    <dimen name="Margin_Large">16dp</dimen>
+    <dimen name="Medium_Margin">12dp</dimen>
+    <dimen name="Margin_Text">28dp</dimen>
+    <dimen name="imagenPerfil">160dp</dimen>
+    <dimen name="dimentext">204dp</dimen>
+    <dimen name="dimentext1">195dp</dimen>
+</resources>
