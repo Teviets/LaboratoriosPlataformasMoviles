@@ -23,7 +23,7 @@
             android:id="@+id/action_characterProfileFragment_to_optionCharacterFragment"
             app:destination="@id/optionCharacterFragment" />
         <argument
-            android:name="Place"
+            android:name="place"
             app:argType="com.sebastian.lab8pm.entities.Place" />
 
     </fragment>
