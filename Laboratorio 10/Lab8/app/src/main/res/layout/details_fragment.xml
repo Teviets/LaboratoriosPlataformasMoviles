@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/Image_Character_Profile"
+            android:layout_width="@dimen/Ancho2"
+            android:layout_height="@dimen/Ancho2"
+            android:layout_marginTop="@dimen/Margin_Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/todo1" />
+
+        <TextView
+            android:id="@+id/text_View_NameProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Margin_Mid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Image_Character_Profile"
+            tools:text="Nombre" />
+
+        <TextView
+            android:id="@+id/text_View_SpecieProfile"
+            android:layout_width="@dimen/Ancho1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Margin_Large2"
+            android:layout_marginTop="@dimen/Margin_Mid2"
+            android:text="@string/specie"
+            app:layout_constraintEnd_toStartOf="@+id/text_View_Specietype"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_View_NameProfile" />
+
+        <TextView
+            android:id="@+id/text_View_Specietype"
+            android:layout_width="@dimen/Ancho1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Margin_Large2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_View_NameProfile"
+            app:layout_constraintTop_toBottomOf="@+id/text_View_NameProfile"
+            tools:text="Human" />
+
+        <TextView
+            android:id="@+id/text_View_StatusType"
+            android:layout_width="@dimen/Ancho3"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Margin_Mid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_View_StatusProfile"
+            app:layout_constraintTop_toBottomOf="@+id/text_View_Specietype"
+            tools:text="Alive" />
+
+        <TextView
+            android:id="@+id/text_View_StatusProfile"
+            android:layout_width="@dimen/Ancho1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Margin_Large2"
+            android:layout_marginTop="@dimen/Margin_Mid"
+            android:text="@string/status"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_View_SpecieProfile" />
+
+        <TextView
+            android:id="@+id/text_View_GenderProfile"
+            android:layout_width="@dimen/Ancho1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Margin_Large2"
+            android:layout_marginTop="@dimen/Margin_Mid"
+            android:text="@string/gender"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_View_StatusProfile" />
+
+        <TextView
+            android:id="@+id/text_View_GenderType"
+            android:layout_width="@dimen/Ancho3"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Margin_Mid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_View_GenderProfile"
+            app:layout_constraintTop_toBottomOf="@+id/text_View_StatusType"
+            tools:text="Male" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Ancho1">150dp</dimen>
+    <dimen name="Margin_Large">30dp</dimen>
+    <dimen name="Margin_small">10dp</dimen>
+    <dimen name="Ancho2">100dp</dimen>
+    <dimen name="Margin_Mid">20dp</dimen>
+    <dimen name="Margin_Large2">50dp</dimen>
+    <dimen name="Margin_Mid2">48dp</dimen>
+    <dimen name="Ancho3">120dp</dimen>
+</resources>
