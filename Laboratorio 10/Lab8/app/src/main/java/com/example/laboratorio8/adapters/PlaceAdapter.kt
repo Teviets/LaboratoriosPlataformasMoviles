@@ -22,9 +22,9 @@ class PlaceAdapter(private val dataSet: MutableList<Place>,
     class ViewHolder(private val view: View,
                      private val listener: RecyclerPlaceClickHandler
                  ) : RecyclerView.ViewHolder(view) {
-        private val imageType: ImageView = view.findViewById(R.id.imageCharacter)
-        private val textName: TextView = view.findViewById(R.id.textNameCharacter)
-        private val dataText: TextView = view.findViewById(R.id.textDataCharacter)
+        private val imageType: ImageView = view.findViewById(R.id.Image_Character_Profile)
+        private val textName: TextView = view.findViewById(R.id.text_View_NameCharacter)
+        private val dataText: TextView = view.findViewById(R.id.text_View_DataCharacter)
         private val layoutPlace: ConstraintLayout = view.findViewById(R.id.layout_itemPlace)
 
         fun setData(place: Place) {
